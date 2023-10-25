@@ -29,3 +29,11 @@ function foo()
   alert( fooargs );
 }
 foo( "test", 2, 2 );
+
+
+const kelvin = 293; //declaring a variable for kelvin
+let Celsius = kelvin - 273;// getting a celcius temp
+let Fahrenheit = Celsius * (9/5) + 32;// getting a Fahrenheit temp
+fahrenheit = Math.floor(Fahrenheit);// rounding a Fahrenheit temp
+let Temperature = Fahrenheit;
+console.log('The temperature is: ' + Temperature + ' degrees Fahrenheit');
