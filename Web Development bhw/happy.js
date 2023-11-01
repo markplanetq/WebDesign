@@ -37,3 +37,19 @@ let Fahrenheit = Celsius * (9/5) + 32;// getting a Fahrenheit temp
 fahrenheit = Math.floor(Fahrenheit);// rounding a Fahrenheit temp
 let Temperature = Fahrenheit;
 console.log('The temperature is: ' + Temperature + ' degrees Fahrenheit');
+
+var myvalue;
+alert( 'myvalue: ' + myvalue );
+
+var test = 3/"abc";
+alert( 'test:' + test);
+
+function maker(name, where, grade)
+{
+    var it = {};
+    it.name = name;
+    it['goto']=where;
+    it.grade=grade;
+    return it;
+}
+myobj = maker('abc', 'happy', 22);
