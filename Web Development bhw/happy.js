@@ -53,3 +53,27 @@ function maker(name, where, grade)
     return it;
 }
 myobj = maker('abc', 'happy', 22);
+
+
+function isFruit(x) {
+  if ( x == "apple" || x == "fig" || x == "pear" ) 
+  { return true; }            
+  return false;
+}
+
+
+function normaliseURL(url) {
+  url = url.trim();
+  if ( url.length == 0 ) return "";
+  var i = url.indexOf("://");
+  var j = url.indexOf("/", i + 3);
+  var access_method = "";
+  var hostname = "";
+  if ( i != -1 ) {
+    access_method = url.substring(0, i).toLowerCase() + "://";
+    if ( j != -1 )
+        hostname = url.substring(i + 3, j).toLowerCase();
+  } else {
+    j=0;
+  }
+  r
