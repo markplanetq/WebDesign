@@ -62,7 +62,7 @@ function isFruit(x) {
 }
 
 
-function normaliseURL(url) {
+function normaliseURL(url) {}
   url = url.trim();
   if ( url.length == 0 ) return "";
   var i = url.indexOf("://");
@@ -76,4 +76,25 @@ function normaliseURL(url) {
   } else {
     j=0;
   }
-  r
+  
+
+var wakeuptime = 7;
+var noon = 12;
+var lunchtime = 12;
+var naptime = lunchtime + 2;
+var partytime;
+var evening = 18;
+
+// Getting it to show the current time on the page
+var showCurrentTime = function()
+{
+    // display the string on the webpage
+    var clock = document.getElementById('clock');
+ 
+    var currentTime = new Date();
+ 
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
+    var meridian = "AM";
+}
