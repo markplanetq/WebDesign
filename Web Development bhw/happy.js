@@ -221,3 +221,20 @@ wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
 // Activates Lunch selector
 var lunchTimeSelector =  document.getElementById("lunchTimeSelector");
 
+var lunchEvent = function()
+{
+    lunchtime = lunchTimeSelector.value;
+};
+
+lunchTimeSelector.addEventListener("change", lunchEvent);
+
+
+// Activates Nap-Time selector
+var napTimeSelector =  document.getElementById("napTimeSelector");
+
+var napEvent = function()
+{
+    naptime = napTimeSelector.value;
+};
+
+napTimeSelector.addEventListener("change", napEvent);
