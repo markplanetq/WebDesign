@@ -238,3 +238,17 @@ var napEvent = function()
 };
 
 napTimeSelector.addEventListener("change", napEvent);
+
+
+var userName = prompt("What is your name?");
+
+// Display a personalized greeting
+if (userName) {
+  alert("Hello, " + userName + "! Welcome to our website!");
+} else {
+  alert("Hello, guest! Welcome to our website!");
+}
+
+
+
+
